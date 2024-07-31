@@ -26,7 +26,7 @@ Things you may want to cover:
 
 # Aplicación del Clima
 
-![Clima en Santiago](weather_app/app/assets/images/img-clima-app.png)
+![Descripción de la imagen](ruta/relativa/a/la/imagen.png)
 
 ## Descripción
 
