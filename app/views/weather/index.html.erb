@@ -1,0 +1,24 @@
+<div class="weather-card">
+  <h2>Clima en <%= @city.capitalize %></h2>
+
+  <% if @error_message %>
+    <div class="error-message">
+      <p><%= @error_message %></p>
+    </div>
+  <% else %>
+    <div class="weather-icon">
+      <img src="http://openweathermap.org/img/wn/<%= @icon %>@4x.png" alt="Icono del clima">
+    </div>
+    <div class="temperature">
+      <i class="fas fa-thermometer-half"></i> <%= @temperature %>°C
+    </div>
+    <div class="weather-description">
+      <%= @description %>
+    </div>
+  <% end %>
+
+  <form action="/" method="get" class="search-form">
+    <input type="text" name="city" class="form-control search-input" placeholder="Ingrese una ciudad" required>
+    <button type="submit" class="btn search-btn">Consultar</button>
+  </form>
+</div>
